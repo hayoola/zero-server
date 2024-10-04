@@ -1,0 +1,19 @@
+{
+    "name": "Zero Server",
+    "service": "app",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/home/node/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "forwardPorts": [
+        3000
+    ],
+    "remoteUser": "node"
+}
