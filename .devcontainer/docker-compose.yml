@@ -11,14 +11,11 @@ services:
       - ~/.gitconfig:/home/node/.gitconfig
       - /etc/localtime:/etc/localtime:ro
     command: sleep infinity
-    ports:
-    - '3000:3000'
+   
   redis:
     build: ./redis
     networks:
       - z-server-bridge
-    #ports:
-      #- '6379:6379'
 
 networks:
   z-server-bridge:
